@@ -62,6 +62,7 @@ header{
     width: 70%;
     border-left: none;
     height: 300px;
+    border: none;
 }
 
 .tabcontento{
@@ -70,20 +71,32 @@ header{
 
 .fruit{
     display: inline-block;
-    padding: 8px;
+    padding: 10px;
 }
 .vegetable{
     display: inline-block;
-    padding: 8px;
+    padding: 10px;
 }
 
 .meat{
     display: inline-block;
-    padding: 8px;
+    padding: 10px;
 }
 
 .cooking{
     display: inline-block;
-    padding: 8px;
+    padding: 10px;
 }
+
+.carbs{
+    display: inline-block;
+    padding: 10px;
+}
+
+.add{
+    text-align: center;
+   margin-left: 40px
+;
+}
+
 
