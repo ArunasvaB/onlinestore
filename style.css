@@ -100,5 +100,9 @@ header{
    display: block;
 }
 
+.form {
+   float: right;
+}
+
 
 
