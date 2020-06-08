@@ -14,6 +14,7 @@
     padding-bottom: 70px;
     padding-top: 50px;
        }
+
 header{
     background: linear-gradient(to top, #e67c47 ,#ff5e62);
     color: white;
@@ -55,15 +56,15 @@ header{
 .tabcontent {
     float: left;
     padding: 0px 12px;
-    border: 1px solid #ccc;
+    border-right: red 10px;
     width: 70%;
     border-left: none;
     height: 300px;
-    border: none;
 }
 
 .tabcontento{
     display: none;
+    border-right: red 10px;
 }
 
 .fruit{
@@ -92,8 +93,12 @@ header{
 
 .add{
     text-align: center;
-   margin-left: 40px
-;
+   margin-left: 40px;
 }
+
+.forms{
+   display: block;
+}
+
 
 
