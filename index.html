@@ -7,7 +7,10 @@
 <body>
 
 
-<header>OG : Online Groceries</header>
+<header>
+    OG : Online Groceries
+</header>
+
 <div class="tab">
  <button class="tablinks" onclick="openCity(event,'All')">All Foods</button>
  <button class="tablinks" onclick="openCity(event,'Gluten')">Gluten-Free</button>
@@ -15,8 +18,9 @@
  <button class="tablinks" onclick="openCity(event,'Organic')">Organic</button>
  <button class="tablinks" onclick="openCity(event,'GV')">Gluten-Free & Vegetarian</button>
  <button class="tablinks" onclick="openCity(event,'OV')">Organic & Vegetarian</button>
- <button class="tablinks" onclick="openCity(event,'GO')">Gluten Free & Organic</button>
- <button class="tablinks" onclick="openCity(event,'GOV')">Gluten Free, Organic & Vegetarian</button>
+ <button class="tablinks" onclick="openCity(event,'GO')">Gluten-Free & Organic</button>
+ <button class="tablinks" onclick="openCity(event,'GOV')">Gluten-Free, Organic & Vegetarian</button>
+ <img class="carts" src="images/cart.jpg" width="90" height="90" onclick="openCity(event,'Cart')">
 
 </div>
 <div id="All" class="tabcontent">
@@ -25,101 +29,101 @@
 
         <img src="images/apple.jpg" width="100" height="100">
         <p style = "text-align: center">Apple $1.45 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('apple')>Add</button>
     </div>
 
         <div id="broccoli" class="vegetable">
             <img src="images/broccoli.jpg" width="100" height="100">
             <p style = "text-align: center">Broccoli $1.99 </p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('broccoli')>Add</button>
         </div>
 
         <div id="carrot" class="vegetable">
             <img src="images/carrots.jpg" width="100" height="100">
             <p style = "text-align: center">Carrots $2.10 </p>
-            <br> <button class="add" onclick=addToCart(itm)>Add</button>
+            <br> <button class="add" onclick=addToCart('carrot')>Add</button>
         </div>
 
         <div id="celery" class="vegetable">
             <img src="images/celery.jpg" width="100" height="100">
             <p style = "text-align: center">Celery $2.19 </p>
-            <br> <button class="add" onclick=addToCart(itm)>Add</button>
+            <br> <button class="add" onclick=addToCart('celery')>Add</button>
         </div>
 
         <div id="chicken" class="meat">
             <img src="images/chicken.jpg" width="100" height="100">
             <p style = "text-align: center">Chicken $4.50</p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('chicken')>Add</button>
         </div>
 
         <div id="oil" class="cooking">
             <img src="images/oil.jpg" width="100" height="100">
             <p style = "text-align: center">Oil $5.00 </p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('oil')>Add</button>
         </div>
 
         <div id="orange" class="fruit">
             <img src="images/orange.jpg" width="100" height="100">
             <p style = "text-align: center">Orange $5.00</p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('orange')>Add</button>
         </div>
 
         <div id="salmon" class="meat">
             <img src="images/salmon.jpg" width="100" height="100">
             <p style = "text-align: center">Salmon $8.00 </p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('salmon')>Add</button>
         </div>
 
         <div id="siracha" class="cooking">
             <img src="images/siracha.jpg" width="100" height="100">
             <p style = "text-align: center">Hot Sauce $10.00 </p>
-            <br> <button class="add" onclick=addToCart(itm)>Add</button>
+            <br> <button class="add" onclick=addToCart('siracha')>Add</button>
         </div>
 
         <div id="soy" class="cooking">
             <img src="images/soy.jpg" width="100" height="100">
             <p style = "text-align: center">Soy $10.10 </p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('soy')>Add</button>
         </div>
 
         <div id="steak" class="meat">
             <img src="images/steak.jpg" width="100" height="100">
             <p style = "text-align: center">Steak $11.45 </p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('steak')>Add</button>
         </div>
 
         <div id="watermelon" class="fruit">
             <img src="images/watermelon.jpg" width="100" height="100">
             <p style = "text-align: center">Watermelon $12.00 </p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('watermelon')>Add</button>
         </div>
 
         <div id="spinach" class="vegetable">
             <img src="images/spinach.jpg" width="100" height="100">
             <p style = "text-align: center">Spinach $12.50 </p>
-            <br> <button class="add" onclick=addToCart(itm)>Add</button>
+            <br> <button class="add" onclick=addToCart('spinach')>Add</button>
         </div>
 
         <div id="honeydew" class="fruit">
             <img src="images/honeydew.jpg" width="100" height="100">
             <p style = "text-align: center">Honeydew $14.00 </p>
-            <br><button class="add" onclick=addToCart(itm)>Add</button>
+            <br><button class="add" onclick=addToCart('honeydew')>Add</button>
         </div>
 
         <div id="salt" class="cooking">
             <img src="images/salt.jpg" width="100" height="100">
             <p style = "text-align: center">Salt $14.00 </p>
-            <br> <button class="add" onclick=addToCart(itm)>Add</button>
+            <br> <button class="add" onclick=addToCart('salt')>Add</button>
         </div>
     <div id="cake" class="carbs">
         <img src="images/cake.jpg" width="100" height="100">
         <p style = "text-align: center">Cake $15.30 </p>
-        <br><button class="add" onclick=addToCart(itm)>>Add</button>
+        <br><button class="add" onclick=addToCart('cake')>Add</button>
     </div>
     <div id="bread" class="carbs">
         <img src="images/bread.jpg" width="100" height="100">
         <p style = "text-align: center">Bread $16.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('bread')>Add</button>
     </div>
 
 
@@ -128,94 +132,93 @@
 
 <div id="Gluten" class="tabcontento">
     <div id="apple" class="fruit">
-
         <img src="images/apple.jpg" width="100" height="100">
         <p style = "text-align: center">Apple $1.45 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('apple')>Add</button>
     </div>
 
     <div id="broccoli" class="vegetable">
         <img src="images/broccoli.jpg" width="100" height="100">
         <p style = "text-align: center">Broccoli $1.99 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('broccoli')>Add</button>
     </div>
 
     <div id="carrot" class="vegetable">
         <img src="images/carrots.jpg" width="100" height="100">
         <p style = "text-align: center">Carrots $2.10 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('carrot')>Add</button>
     </div>
 
     <div id="celery" class="vegetable">
         <img src="images/celery.jpg" width="100" height="100">
         <p style = "text-align: center">Celery $2.19 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('celery')>Add</button>
     </div>
 
     <div id="chicken" class="meat">
         <img src="images/chicken.jpg" width="100" height="100">
         <p style = "text-align: center">Chicken $4.50</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('chicken')>Add</button>
     </div>
 
     <div id="oil" class="cooking">
         <img src="images/oil.jpg" width="100" height="100">
         <p style = "text-align: center">Oil $5.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('oil')>Add</button>
     </div>
 
     <div id="orange" class="fruit">
         <img src="images/orange.jpg" width="100" height="100">
         <p style = "text-align: center">Orange $5.00</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('orange')>Add</button>
     </div>
 
     <div id="salmon" class="meat">
         <img src="images/salmon.jpg" width="100" height="100">
         <p style = "text-align: center">Salmon $8.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('salmon')>Add</button>
     </div>
 
     <div id="siracha" class="cooking">
         <img src="images/siracha.jpg" width="100" height="100">
         <p style = "text-align: center">Hot Sauce $10.00 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('siracha')>Add</button>
     </div>
 
     <div id="soy" class="cooking">
         <img src="images/soy.jpg" width="100" height="100">
         <p style = "text-align: center">Soy $10.10 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('soy')>Add</button>
     </div>
 
     <div id="steak" class="meat">
         <img src="images/steak.jpg" width="100" height="100">
         <p style = "text-align: center">Steak $11.45 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('steak')>Add</button>
     </div>
 
     <div id="watermelon" class="fruit">
         <img src="images/watermelon.jpg" width="100" height="100">
         <p style = "text-align: center">Watermelon $12.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('watermelon')>Add</button>
     </div>
 
     <div id="spinach" class="vegetable">
         <img src="images/spinach.jpg" width="100" height="100">
         <p style = "text-align: center">Spinach $12.50 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('spinach')>Add</button>
     </div>
 
     <div id="honeydew" class="fruit">
         <img src="images/honeydew.jpg" width="100" height="100">
         <p style = "text-align: center">Honeydew $14.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('honeydew')>Add</button>
     </div>
 
     <div id="salt" class="cooking">
         <img src="images/salt.jpg" width="100" height="100">
         <p style = "text-align: center">Salt $14.00 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('salt')>Add</button>
     </div>
 
 
@@ -227,79 +230,79 @@
 
         <img src="images/apple.jpg" width="100" height="100">
         <p style = "text-align: center">Apple $1.45 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('apple')>Add</button>
     </div>
 
     <div id="broccoli" class="vegetable">
         <img src="images/broccoli.jpg" width="100" height="100">
         <p style = "text-align: center">Broccoli $1.99 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('broccoli')>Add</button>
     </div>
 
     <div id="carrot" class="vegetable">
         <img src="images/carrots.jpg" width="100" height="100">
         <p style = "text-align: center">Carrots $2.10 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('carrot')>Add</button>
     </div>
 
     <div id="celery" class="vegetable">
         <img src="images/celery.jpg" width="100" height="100">
         <p style = "text-align: center">Celery $2.19 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('celery')>Add</button>
     </div>
 
     <div id="oil" class="cooking">
         <img src="images/oil.jpg" width="100" height="100">
         <p style = "text-align: center">Oil $5.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('oil')>Add</button>
     </div>
 
     <div id="orange" class="fruit">
         <img src="images/orange.jpg" width="100" height="100">
         <p style = "text-align: center">Orange $5.00</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('orange')>Add</button>
     </div>
 
     <div id="siracha" class="cooking">
         <img src="images/siracha.jpg" width="100" height="100">
         <p style = "text-align: center">Hot Sauce $10.00 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('siracha')>Add</button>
     </div>
 
     <div id="soy" class="cooking">
         <img src="images/soy.jpg" width="100" height="100">
         <p style = "text-align: center">Soy $10.10 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('soy')>Add</button>
     </div>
 
     <div id="watermelon" class="fruit">
         <img src="images/watermelon.jpg" width="100" height="100">
         <p style = "text-align: center">Watermelon $12.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('watermelon')>Add</button>
     </div>
 
     <div id="spinach" class="vegetable">
         <img src="images/spinach.jpg" width="100" height="100">
         <p style = "text-align: center">Spinach $12.50 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('spinach')>Add</button>
     </div>
 
     <div id="honeydew" class="fruit">
         <img src="images/honeydew.jpg" width="100" height="100">
         <p style = "text-align: center">Honeydew $14.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('honeydew')>Add</button>
     </div>
 
     <div id="salt" class="cooking">
         <img src="images/salt.jpg" width="100" height="100">
         <p style = "text-align: center">Salt $14.00 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('salt')>Add</button>
     </div>
 
     <div id="bread" class="carbs">
         <img src="images/bread.jpg" width="100" height="100">
         <p style = "text-align: center">Bread $16.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('bread')>Add</button>
     </div>
 
 
@@ -311,37 +314,37 @@
 
         <img src="images/apple.jpg" width="100" height="100">
         <p style = "text-align: center">Apple $1.45 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('apple')>Add</button>
     </div>
 
     <div id="broccoli" class="vegetable">
         <img src="images/broccoli.jpg" width="100" height="100">
         <p style = "text-align: center">Broccoli $1.99 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('broccoli')>Add</button>
     </div>
 
     <div id="carrot" class="vegetable">
         <img src="images/carrots.jpg" width="100" height="100">
         <p style = "text-align: center">Carrots $2.10 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('carrot')>Add</button>
     </div>
 
     <div id="celery" class="vegetable">
         <img src="images/celery.jpg" width="100" height="100">
         <p style = "text-align: center">Celery $2.19 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('celery')>Add</button>
     </div>
 
     <div id="chicken" class="meat">
         <img src="images/chicken.jpg" width="100" height="100">
         <p style = "text-align: center">Chicken $4.50</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('chicken')>Add</button>
     </div>
 
     <div id="orange" class="fruit">
         <img src="images/orange.jpg" width="100" height="100">
         <p style = "text-align: center">Orange $5.00</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('orange')>Add</button>
     </div>
 
 
@@ -349,31 +352,31 @@
     <div id="steak" class="meat">
         <img src="images/steak.jpg" width="100" height="100">
         <p style = "text-align: center">Steak $11.45 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('steak')>Add</button>
     </div>
 
     <div id="watermelon" class="fruit">
         <img src="images/watermelon.jpg" width="100" height="100">
         <p style = "text-align: center">Watermelon $12.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('watermelon')>Add</button>
     </div>
 
     <div id="spinach" class="vegetable">
         <img src="images/spinach.jpg" width="100" height="100">
         <p style = "text-align: center">Spinach $12.50 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('spinach')>Add</button>
     </div>
 
     <div id="honeydew" class="fruit">
         <img src="images/honeydew.jpg" width="100" height="100">
         <p style = "text-align: center">Honeydew $14.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('honeydew')>Add</button>
     </div>
 
     <div id="bread" class="carbs">
         <img src="images/bread.jpg" width="100" height="100">
         <p style = "text-align: center">Bread $16.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('bread')>Add</button>
     </div>
 
 </div>
@@ -384,131 +387,131 @@
 
         <img src="images/apple.jpg" width="100" height="100">
         <p style = "text-align: center">Apple $1.45 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('apple')>Add</button>
     </div>
 
     <div id="broccoli" class="vegetable">
         <img src="images/broccoli.jpg" width="100" height="100">
         <p style = "text-align: center">Broccoli $1.99 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('broccoli')>Add</button>
     </div>
 
     <div id="carrot" class="vegetable">
         <img src="images/carrots.jpg" width="100" height="100">
         <p style = "text-align: center">Carrots $2.10 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('carrot')>Add</button>
     </div>
 
     <div id="celery" class="vegetable">
         <img src="images/celery.jpg" width="100" height="100">
         <p style = "text-align: center">Celery $2.19 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('celery')>Add</button>
     </div>
 
     <div id="oil" class="cooking">
         <img src="images/oil.jpg" width="100" height="100">
         <p style = "text-align: center">Oil $5.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('oil')>Add</button>
     </div>
 
     <div id="orange" class="fruit">
         <img src="images/orange.jpg" width="100" height="100">
         <p style = "text-align: center">Orange $5.00</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('orange')>Add</button>
     </div>
 
     <div id="siracha" class="cooking">
         <img src="images/siracha.jpg" width="100" height="100">
         <p style = "text-align: center">Hot Sauce $10.00 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('siracha')>Add</button>
     </div>
 
     <div id="soy" class="cooking">
         <img src="images/soy.jpg" width="100" height="100">
         <p style = "text-align: center">Soy $10.10 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('soy')>Add</button>
     </div>
 
     <div id="watermelon" class="fruit">
         <img src="images/watermelon.jpg" width="100" height="100">
         <p style = "text-align: center">Watermelon $12.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('watermelon')>Add</button>
     </div>
 
     <div id="spinach" class="vegetable">
         <img src="images/spinach.jpg" width="100" height="100">
         <p style = "text-align: center">Spinach $12.50 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('spinach')>Add</button>
     </div>
 
     <div id="honeydew" class="fruit">
         <img src="images/honeydew.jpg" width="100" height="100">
         <p style = "text-align: center">Honeydew $14.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('honeydew')>Add</button>
     </div>
 
     <div id="salt" class="cooking">
         <img src="images/salt.jpg" width="100" height="100">
         <p style = "text-align: center">Salt $14.00 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('salt')>Add</button>
     </div>
 
 </div>
 
 <div id="OV" class="tabcontento">
-    <div id="apple" class="fruit">
 
+    <div id="apple" class="fruit">
         <img src="images/apple.jpg" width="100" height="100">
         <p style = "text-align: center">Apple $1.45 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('apple')>Add</button>
     </div>
 
     <div id="broccoli" class="vegetable">
         <img src="images/broccoli.jpg" width="100" height="100">
         <p style = "text-align: center">Broccoli $1.99 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('broccoli')>Add</button>
     </div>
 
     <div id="carrot" class="vegetable">
         <img src="images/carrots.jpg" width="100" height="100">
         <p style = "text-align: center">Carrots $2.10 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('carrot')>Add</button>
     </div>
 
     <div id="celery" class="vegetable">
         <img src="images/celery.jpg" width="100" height="100">
         <p style = "text-align: center">Celery $2.19 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('celery')>Add</button>
     </div>
 
 
     <div id="orange" class="fruit">
         <img src="images/orange.jpg" width="100" height="100">
         <p style = "text-align: center">Orange $5.00</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('orange')>Add</button>
     </div>
 
     <div id="watermelon" class="fruit">
         <img src="images/watermelon.jpg" width="100" height="100">
         <p style = "text-align: center">Watermelon $12.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('watermelon')>Add</button>
     </div>
 
     <div id="spinach" class="vegetable">
         <img src="images/spinach.jpg" width="100" height="100">
         <p style = "text-align: center">Spinach $12.50 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('spinach')>Add</button>
     </div>
 
     <div id="honeydew" class="fruit">
         <img src="images/honeydew.jpg" width="100" height="100">
         <p style = "text-align: center">Honeydew $14.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('honeydew')>Add</button>
     </div>
     <div id="bread" class="carbs">
         <img src="images/bread.jpg" width="100" height="100">
         <p style = "text-align: center">Bread $16.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('bread')>Add</button>
     </div>
 </div>
 
@@ -518,62 +521,62 @@
 
         <img src="images/apple.jpg" width="100" height="100">
         <p style = "text-align: center">Apple $1.45 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('apple')>Add</button>
     </div>
 
     <div id="broccoli" class="vegetable">
         <img src="images/broccoli.jpg" width="100" height="100">
         <p style = "text-align: center">Broccoli $1.99 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('broccoli')>Add</button>
     </div>
 
     <div id="carrot" class="vegetable">
         <img src="images/carrots.jpg" width="100" height="100">
         <p style = "text-align: center">Carrots $2.10 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('carrot')>Add</button>
     </div>
 
     <div id="celery" class="vegetable">
         <img src="images/celery.jpg" width="100" height="100">
         <p style = "text-align: center">Celery $2.19 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('celery')>Add</button>
     </div>
 
     <div id="chicken" class="meat">
         <img src="images/chicken.jpg" width="100" height="100">
         <p style = "text-align: center">Chicken $4.50</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('chicken')>Add</button>
     </div>
 
 
     <div id="orange" class="fruit">
         <img src="images/orange.jpg" width="100" height="100">
         <p style = "text-align: center">Orange $5.00</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('orange')>Add</button>
     </div>
 
     <div id="steak" class="meat">
         <img src="images/steak.jpg" width="100" height="100">
         <p style = "text-align: center">Steak $11.45 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('steak')>Add</button>
     </div>
 
     <div id="watermelon" class="fruit">
         <img src="images/watermelon.jpg" width="100" height="100">
         <p style = "text-align: center">Watermelon $12.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('watermelon')>Add</button>
     </div>
 
     <div id="spinach" class="vegetable">
         <img src="images/spinach.jpg" width="100" height="100">
         <p style = "text-align: center">Spinach $12.50 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('spinach')>Add</button>
     </div>
 
     <div id="honeydew" class="fruit">
         <img src="images/honeydew.jpg" width="100" height="100">
         <p style = "text-align: center">Honeydew $14.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('honeydew')>Add</button>
     </div>
 
 
@@ -586,62 +589,67 @@
 
         <img src="images/apple.jpg" width="100" height="100">
         <p style = "text-align: center">Apple $1.45 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('apple')>Add</button>
     </div>
 
     <div id="broccoli" class="vegetable">
         <img src="images/broccoli.jpg" width="100" height="100">
         <p style = "text-align: center">Broccoli $1.99 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('broccoli')>Add</button>
     </div>
 
     <div id="carrot" class="vegetable">
         <img src="images/carrots.jpg" width="100" height="100">
         <p style = "text-align: center">Carrots $2.10 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('carrot')>Add</button>
     </div>
 
     <div id="celery" class="vegetable">
         <img src="images/celery.jpg" width="100" height="100">
         <p style = "text-align: center">Celery $2.19 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('celery')>Add</button>
     </div>
 
 
     <div id="orange" class="fruit">
         <img src="images/orange.jpg" width="100" height="100">
         <p style = "text-align: center">Orange $5.00</p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('orange')>Add</button>
     </div>
 
     <div id="watermelon" class="fruit">
         <img src="images/watermelon.jpg" width="100" height="100">
         <p style = "text-align: center">Watermelon $12.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('watermelon')>Add</button>
     </div>
 
     <div id="spinach" class="vegetable">
         <img src="images/spinach.jpg" width="100" height="100">
         <p style = "text-align: center">Spinach $12.50 </p>
-        <br> <button class="add" onclick=addToCart(itm)>Add</button>
+        <br> <button class="add" onclick=addToCart('spinach')>Add</button>
     </div>
 
     <div id="honeydew" class="fruit">
         <img src="images/honeydew.jpg" width="100" height="100">
         <p style = "text-align: center">Honeydew $14.00 </p>
-        <br><button class="add" onclick=addToCart(itm)>Add</button>
+        <br><button class="add" onclick=addToCart('honeydew')>Add</button>
     </div>
 
 
 </div>
 
+<div id='Cart' class="tabcontento">
+
+    <h1>Here are the contents of your cart</h1>
+    <p id="disp">Contents</p>
+
+</div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <div class="form">
 <form class="forms">
-    <p style="font-size: 20px; color:#f05507;font-weight: bold;">Categories</p>
+    <p style="font-size: 20px; color:#f05507;font-weight: bold; text-align: center;">Categories</p>
     <input type="checkbox" id="carbo" name="checker" value="check">
     <label style="font-size: 20px; color:#f05507;font-weight: bold;" for="carbo">Baked Goods</label><br>
     <input type="checkbox"  id="cook" name="checker" value="check">
@@ -658,7 +666,8 @@
 
 
 
-    <script src="app.js" charset="utf-8"></script>
+
+<script src="app.js" charset="utf-8"></script>
 
 
 </body>

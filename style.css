@@ -2,9 +2,9 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    z-index: 1;
 
 }
-
 
 .tab > h3{
 
@@ -13,6 +13,7 @@
     text-align: center;
     padding-bottom: 70px;
     padding-top: 50px;
+    z-index: 1;
        }
 
 header{
@@ -22,6 +23,7 @@ header{
     height: 60px;
     font-size: 50px;
     font-weight: bold;
+    z-index: 1;
 }
 /*Code for the side tab taken from https://www.w3schools.com/howto/howto_js_vertical_tabs.asp*/
 .tab{
@@ -30,6 +32,7 @@ header{
     background : linear-gradient(to top, #e67c47 ,#ff5e62);
     width:20%;
     height: 1000px;
+    z-index: 1;
 }
 
 .tab button{
@@ -40,17 +43,20 @@ header{
     font-size: 15px;
     width: 100%;
     border: none;
-    height: 10%;
+    height: 5%;
     outline: none;
     text-align: center;
     cursor: pointer;
+    z-index: 1;
 }
 
 .tab button:hover {
     background-color: orangered;
+    z-index: 1;
 }
 .tab button.active {
     background-color: orangered;
+    z-index: 1;
 }
 
 .tabcontent {
@@ -60,49 +66,76 @@ header{
     width: 70%;
     border-left: none;
     height: 300px;
+    z-index: 1;
 }
 
 .tabcontento{
     display: none;
     border-right: red 10px;
+    z-index: 1;
 }
 
 .fruit{
     display: inline-block;
     padding: 10px;
+    z-index: 1;
 }
 .vegetable{
     display: inline-block;
     padding: 10px;
+    z-index: 1;
 }
 
 .meat{
     display: inline-block;
     padding: 10px;
+    z-index: 1;
 }
 
 .cooking{
     display: inline-block;
     padding: 10px;
+    z-index: 1;
 }
 
 .carbs{
     display: inline-block;
     padding: 10px;
+    z-index: 1;
 }
 
 .add{
     text-align: center;
    margin-left: 40px;
+    z-index: 1;
 }
 
 .forms{
    display: block;
+    z-index: 1;
 }
 
 .form {
    float: right;
+    z-index: 1;
+
 }
+
+
+
+
+
+.carts{
+    margin-left:  80px;
+
+}
+
+.carts:hover{
+    cursor: pointer;
+}
+
+
+
 
 
 

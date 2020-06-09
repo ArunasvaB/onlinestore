@@ -322,26 +322,27 @@ function selectVegetal(checkbox)
 }
 
 
+
+
+
 bakebox.addEventListener("change", ()=>selectBake(bakebox));
 cookbox.addEventListener("change", ()=>selectCookbox(cookbox));
 froontbox.addEventListener("change", ()=>selectFroontbox(froontbox));
 vegetalbox.addEventListener("change", ()=>selectVegetal(vegetalbox));
 meatbox.addEventListener("change", ()=>selectMeatbox(meatbox));
 
+let paragraph = document.getElementById("disp");
 
-// and attach a click event handler
-$("input:checkbox").on('click', function() {
-    // in the handler, 'this' refers to the box clicked on
-    var $box = $(this);
-    if ($box.is(":checked")) {
-        // the name of the box is retrieved using the .attr() method
-        // as it is assumed and expected to be immutable
-        var group = "input:checkbox[name='" + $box.attr("name") + "']";
-        // the checked state of the group/box on the other hand will change
-        // and the current value is retrieved using .prop() method
-        $(group).prop("checked", false);
-        $box.prop("checked", true);
-    } else {
-        $box.prop("checked", false);
+function addToCart(pass)
+{
+    var count = 0;
+    var quant =0;
+    var str="";
+    if(pass=="apple")
+    {
+        count += 1.45;
+        quant++;
+        str = "Apples";
     }
-});
+
+}
