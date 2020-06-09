@@ -26,8 +26,13 @@ function openCity(evt, cityName) {
 
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(cityName).style.display = "block";
+    if(cityName=='Cart')
+    {
+        displayCart();
+    }
     evt.currentTarget.className += " active";
 }
+
 
 //not tab stuff
 
@@ -333,16 +338,47 @@ meatbox.addEventListener("change", ()=>selectMeatbox(meatbox));
 
 let paragraph = document.getElementById("disp");
 
-function addToCart(pass)
+const names =[];
+const prices = [];
+
+function summer() {
+    var cont=0;
+        for(var i=0;i<prices.length;i++)
+        {
+                cont+=prices[i];
+        }
+        return cont;
+}
+
+
+function displayCart()
 {
-    var count = 0;
-    var quant =0;
-    var str="";
-    if(pass=="apple")
+    disp = document.getElementById("disp");
+    disp.innerHTML="<ul>";
+    for (var i=0; i<prices.length;i++ )
     {
-        count += 1.45;
-        quant++;
-        str = "Apples";
+        disp.innerHTML+="<li>"+names[i]+" "+prices[i]+"<button class='remove' onclick='remove(" + i + ")'>Remove</button> </li>"
     }
+
+    disp.innerHTML+="</ul><br> Total Price = " + summer();
+        }
+ function remove(indick) {
+        names.splice(indick, 1);
+     prices.splice(indick, 1);
+     displayCart();
+
+ }
+
+function addToCart(pass, price)
+{
+    const index = names.indexOf(pass);
+    if(index>=0)
+    {
+       prices[index]++;
+    }else
+        {
+            names.push(pass);
+            prices.push(price);
+        }
 
 }
